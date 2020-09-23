@@ -9,7 +9,12 @@
 <body>
     <div class="master-container">
         <?php include('inc/main-side-panel.php') ?>
-        <?php include('inc/connection.inc.php') ?>
+        <?php
+            session_start();
+            if ( isset( $_SESSION['adminCin'] ) ){
+                header('refresh:1;url=src/admin/controlPanel.php');
+            }
+        ?>
         <div class="login-panel">
             <div class="container">
                 <section class="heading">
@@ -19,7 +24,7 @@
                     <div class="flex">
                         <input type="text" placeholder="Cin" name="cin" required class="username" pattern="[0-9]{8}">
                         <input type="password" placeholder="Password" name="password" required>
-                        <input type="submit" value="Login" class="submit">
+                        <input type="submit" value="Login" class="submit" name="login-button">
                     </div>
                     <label class="signup-label">
                         <p>Don't have an account ? <span><a href="request.php">Request one</a></span></p>

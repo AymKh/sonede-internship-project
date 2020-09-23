@@ -12,8 +12,9 @@
             <div class="container">
                 <img src="../../img/logo.svg" alt="Logo" width="50">
                 <p>
-                    <span class="user-pseudo">Jhon Doe</span>
-                    <span class="user-rank">[ RANK ]</span>
+                    <?php session_start(); ?>
+                    <span class="user-pseudo"><?php $_SESSION['adminCin'] ?></span>
+                    <span class="user-rank">[ <?php $_SESSION['rank'] ?> ]</span>
                 </p>
                 <!-- end of container -->
             </div>
@@ -25,7 +26,9 @@
                     <li><a href="#">Something</a></li>
                 </ul>
             </nav>
-            <button class="logout-button">Logout</button>
+            <form action="../../scripts/logout.php" id="logout">
+                <button class="logout-button">Logout</button>
+            </form>
             <!-- end of sidePanel -->
         </section>
         <main>

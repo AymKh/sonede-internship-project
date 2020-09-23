@@ -118,7 +118,12 @@
   background-color: #2980B9;
 }
 
-.side-panel .logout-button {
+.side-panel #logout {
+  width: 100%;
+  background-color: red;
+}
+
+.side-panel #logout .logout-button {
   background-color: #059ce7;
   border: none;
   font-size: 1rem;
