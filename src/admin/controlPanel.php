@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💧 S.O.N.E.D.E</title>
+    <link rel="icon" type="image/png" href="../img/icons/water.svg">
+    <title>S.O.N.E.D.E - Beja</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <div class="master-container">
         <section class="side-panel">
-            <div class="container">
+            <div class="container"> 
                 <img src="../../img/logo.svg" alt="Logo" width="50">
                 <p>
                     <?php session_start(); ?>
-                    <span class="user-pseudo"><?php $_SESSION['adminCin'] ?></span>
-                    <span class="user-rank">[ <?php $_SESSION['rank'] ?> ]</span>
+                    <span class="user-pseudo"><?php echo $_SESSION['username'] ?></span>
+                    <span class="user-rank">[ <?php echo $_SESSION['rank'] ?> ]</span>
                 </p>
                 <!-- end of container -->
             </div>

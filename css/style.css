@@ -11,7 +11,7 @@
       grid-template-rows: repeat(4, 1fr);
 }
 
-.grid input {
+.grid input, .grid select {
   padding: 1rem;
   width: 100%;
   border: 2px solid #00A8FF;
@@ -124,11 +124,13 @@
 }
 
 .side-panel #logout .logout-button {
-  background-color: #059ce7;
+  background-color: #2980B9;
   border: none;
   font-size: 1rem;
   color: #fff;
   padding: .5rem 0;
+  width: 100%;
+  cursor: pointer;
 }
 
 main {

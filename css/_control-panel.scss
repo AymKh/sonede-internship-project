@@ -54,11 +54,13 @@
         width: 100%;
         background-color: red;
         .logout-button{
-            background-color: #059ce7;
+            background-color: #2980B9;
             border: none;
             font-size: 1rem;
             color: #fff;
             padding: .5rem 0;
+            width: 100%;
+            cursor: pointer;
         }
     }
 }
