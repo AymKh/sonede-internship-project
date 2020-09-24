@@ -286,6 +286,14 @@ body, html {
   font-weight: bold;
 }
 
+.error-label {
+  width: 100%;
+  background-color: #F8D7DA;
+  color: #721C24;
+  padding: .5rem;
+  margin-top: 1rem;
+}
+
 .signup-label {
   display: block;
   color: #2d3436;
