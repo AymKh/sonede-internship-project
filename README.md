@@ -11,3 +11,11 @@ Project for an internship at S.O.N.E.D.E 💦
 🔳 Control panel: accept / delete AR   
 🔳 Control panel: delete / add SA  
 🔳 Control panel: CRUD water bills  
+
+[- Languages -]
+
+🟠 HTTML 5
+🔵 CSS 3
+🔴 SaSS
+🟡 JavaScript
+🟣 PHP
