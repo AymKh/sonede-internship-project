@@ -14,8 +14,8 @@ Project for an internship at S.O.N.E.D.E 💦
 
 [- Languages -]
 
-🟠 HTTML 5
-🔵 CSS 3
-🔴 SaSS
-🟡 JavaScript
-🟣 PHP
+🟠 HTTML 5  
+🔵 CSS 3  
+🔴 SaSS  
+🟡 JavaScript  
+🟣 PHP  
