@@ -15,7 +15,7 @@
                 <p>
                     <?php session_start(); ?>
                     <span class="user-pseudo"><?php echo $_SESSION['username'] ?></span>
-                    <span class="user-rank">[ <?php echo $_SESSION['rank'] ?> ]</span>
+                    <!-- <span class="user-rank">[]</span> -->
                 </p>
                 <!-- end of container -->
             </div>
@@ -36,20 +36,45 @@
             <div class="container">
                 <div class="stats">
                     <div class="stats-grid">
+                        <?php 
+                            // db connection
+                            include_once "../../inc/connection.inc.php";
+
+                            // admin accounts count
+                            $getAdminCount = $db -> query( "SELECT * FROM admin;" );
+                            $nbrA = 0;
+                            while ($getAdminCount->fetch()) {
+                                $nbrA++;
+                            }
+                            
+                            // staff accouunts count
+                            $getStaffCount = $db -> query( "SELECT * FROM staff;" );
+                            $nbrS = 0;
+                            while ($getStaffCount->fetch()) {
+                                $nbrS++;
+                            }
                         
+                            // requests count
+                            $getRequestCount = $db -> query( "SELECT * FROM requests;" );
+                            $nbrR = 0;
+                            while ($getRequestCount->fetch()) {
+                                $nbrR++;
+                            }
+                        
+                        ?>
                         <div class="card">
-                            <h4>Admin Acounts</h4>
-                            <p>12</p>
+                            <h4>Admin Accounts</h4>
+                            <p><?php echo "$nbrA"; ?></p>
                         </div>
     
                         <div class="card">
                             <h4>Staff Acounts</h4>
-                            <p>07</p>
+                            <p><?php echo "$nbrS"; ?></p>
                         </div>
     
                         <div class="card">
                             <h4>Acounts Requests</h4>
-                            <p>23</p>
+                            <p><?php echo "$nbrR"; ?></p>
                         </div>
                         <!-- end of stats-grid -->
                     </div>

@@ -13,5 +13,11 @@
                 <p>Don't have an account ? <span><a href="request.php">Request one</a></span></p>
             </label>
         </form>
+        <?php
+            $url = "htpp://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            if (strpos($url, "login=wrong") == true) {
+                echo "<p class='error-label'>Cin / Password incorrect !</p>";
+            }        
+        ?>
     </div>
 </div>

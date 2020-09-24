@@ -5,7 +5,7 @@ include('inc/partials/header.php');
 
     session_start();
 
-    if ( isset( $_SESSION['username'] ) ){
+    if ( isset( $_SESSION ['username'] ) ){
         // user already logged in, redirect
         header('refresh:1;url=src/admin/controlPanel.php');
     }else{
