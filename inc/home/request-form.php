@@ -19,5 +19,13 @@
                 <p>Already have an account ? <span><a href="index.php">Login</a></span></p>
             </label>
         </form>
+        <?php
+            $url = "htpp://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            if (strpos($url, "request=failed") == true) {
+                echo "<p class='error-label'>Cin is already in use </p>";
+            }elseif(strpos($url, "request=success") == true){
+                echo "<p class='success-label'>Request was submitted successfully </p>";
+            }        
+        ?>
     </div>
 </div>
