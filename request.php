@@ -10,8 +10,8 @@ include('inc/partials/header.php');
         header('refresh:1;url=src/admin/controlPanel.php');
     }else{
         // no user is logged in
-        include('inc/main-side-panel.php');
-        include('inc/request-form.php');
+        include('inc/home/main-side-panel.php');
+        include('inc/home/request-form.php');
     }
 
 
