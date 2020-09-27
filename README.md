@@ -8,8 +8,8 @@ Project for an internship at S.O.N.E.D.E 💦
 ✅ Logout script  
 ✅ Control panel: redirect (session)  
 ✅ Control panel: display data from DB 🐬  
-🔳 Control panel: accept / delete AR   
-🔳 Control panel: delete / add SA  
+✅ Control panel: accept / delete AR   
+✅ Control panel: delete / add SA  
 🔳 Control panel: CRUD water bills  
 
 [- Languages -]
