@@ -19,3 +19,9 @@ Project for an internship at S.O.N.E.D.E 💦
 🔴 SaSS  
 🟡 JavaScript  
 🟣 PHP  
+
+## Demo  
+
+App is hosted on Heroku.com   
+Database is being handled by clever-cloud.com   
+test it here : https://sonede-sarra.herokuapp.com/
