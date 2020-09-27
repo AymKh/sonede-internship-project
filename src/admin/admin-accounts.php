@@ -13,7 +13,7 @@
             // including side panel
             include "../../inc/controlPanel/side-panel-dashboard.php"; 
             // including main panel
-            include "../../inc/controlPanel/main-panel-dashboard.php"; 
+            include "../../inc/controlPanel/main-admina-dashboard.php"; 
         ?>
     </div>
 </body>
