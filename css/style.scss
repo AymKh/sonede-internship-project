@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 @import "./request";
 @import "./control-panel";
+@import "./requests.db";
 *{
     margin: 0;
     padding: 0;
@@ -92,6 +93,13 @@ body, html{
     width: 100%;
     background-color: #F8D7DA;
     color: #721C24;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+.success-label{
+    width: 100%;
+    background-color: #D4EDDA;
+    color: #155724;
     padding: .5rem;
     margin-top: 1rem;
 }

@@ -39,9 +39,6 @@
                 width: 90%;
                 margin: 0 auto;    
             }
-            .active{
-                background-color: #2980B9;
-            }
             li{
                 
                 &:hover{
@@ -84,6 +81,10 @@ main{
                 h4{
                     font-size: 1.5rem;
                     font-weight: 300;
+                    a{
+                        text-decoration: none;
+                        color: #262626;
+                    }
                 }
                 p{
                     font-size: 2.5rem;
