@@ -10,7 +10,15 @@ Project for an internship at S.O.N.E.D.E 💦
 ✅ Control panel: display data from DB 🐬  
 ✅ Control panel: accept / delete AR   
 ✅ Control panel: delete / add SA  
-🔳 Control panel: CRUD water bills  
+🔳 Control panel: CRUD water bills    
+🔳 Staff login  
+🔳 staff account downgrade (prevs)  
+
+⚙ [- Frontend -]   
+
+🔳 Animations  
+🔳 Flat UI  
+
 
 [- Languages -]
 
