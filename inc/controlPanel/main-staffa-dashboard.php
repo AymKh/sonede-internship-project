@@ -6,7 +6,7 @@
                     // sb connection
                     include_once "../../inc/connection.inc.php";
                     // search query
-                    $searchQuery = " SELECT * FROM `staff`; ";
+                    $searchQuery = " SELECT * FROM `users` WHERE `rank` = 'staff'; ";
                     $executeSearch = $db->query($searchQuery);
                     while ($data = $executeSearch ->fetch()) {
                 ?>
@@ -17,7 +17,9 @@
                             <input type="text" name="rank" value="<?php echo $data['rank']; ?>" class="req-rank" readonly>
                             <input type="text" name="cin" value="<?php echo $data['cin']; ?>" class="req-cin" readonly>
                             <input type="password" name="password" value="<?php echo $data['pwd']; ?>" class="req-password" readonly>
-                            <input type="submit" value="Decline" class="account-decline" name="decline-account">
+                            <?php if( $_SESSION['rank']=='admin' ){ ?>
+                                <input type="submit" value="Delete" class="account-decline" name="decline-account">
+                            <?php } ?>
                         </div>
                     </form>
                 <?php } ?>

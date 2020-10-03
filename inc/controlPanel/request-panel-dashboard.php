@@ -11,6 +11,7 @@
             ?>
             <div class="requests-grid">
                 <?php
+                    // session_start();
                     // sb connection
                     include_once "../../inc/connection.inc.php";
                     // search query
@@ -25,8 +26,10 @@
                             <input type="text" name="rank" value="<?php echo $data['rank']; ?>" class="req-rank" readonly>
                             <input type="text" name="cin" value="<?php echo $data['cin']; ?>" class="req-cin" readonly>
                             <input type="password" name="password" value="<?php echo $data['pwd']; ?>" class="req-password" readonly>
-                            <input type="submit" value="Accept" class="req-accept" name="accept">
-                            <input type="submit" value="Decline" class="req-decline" name="decline">
+                            <?php if( $_SESSION['rank'] == "admin" ){ ?>
+                                <input type="submit" value="Accept" class="req-accept" name="accept">
+                                <input type="submit" value="Decline" class="req-decline" name="decline">
+                            <?php } ?>
                         </div>
                     </form>
                 <?php } ?>

@@ -10,11 +10,10 @@
 <body>
     <div class="master-container">
         <?php
-            
             // including side panel
             include "../../inc/controlPanel/side-panel-dashboard.php"; 
             // including main panel
-            include "../../inc/controlPanel/main-panel-dashboard.php"; 
+            include "../../inc/controlPanel/reclamation-admin-panel-dashboard.php"; 
         ?>
     </div>
 </body>

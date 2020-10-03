@@ -9,7 +9,7 @@
         include_once "../inc/connection.inc.php";
 
         // copying data into wanted table
-        $insertQuery = " INSERT INTO `$rank`(`cin`, `username`, `pwd`, `rank`) SELECT `cin`, `username`, `pwd`, `rank` FROM `requests` WHERE `cin` = $cin; ";
+        $insertQuery = " INSERT INTO users (`cin`, `username`, `pwd`, `rank`) SELECT `cin`, `username`, `pwd`, `rank` FROM `requests` WHERE `cin` = $cin; ";
         $db->query($insertQuery);
         // deleting data from request table
         $db->query(" DELETE FROM `requests`  WHERE `cin` = $cin; ");

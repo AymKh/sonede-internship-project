@@ -7,14 +7,14 @@
                     include_once "../../inc/connection.inc.php";
 
                     // admin accounts count
-                    $getAdminCount = $db -> query( "SELECT * FROM admin;" );
+                    $getAdminCount = $db -> query( "SELECT * FROM users WHERE `rank` = 'admin';" );
                     $nbrA = 0;
                     while ($getAdminCount->fetch()) {
                         $nbrA++;
                     }
                     
                     // staff accouunts count
-                    $getStaffCount = $db -> query( "SELECT * FROM staff;" );
+                    $getStaffCount = $db -> query( "SELECT * FROM users WHERE `rank` = 'staff';" );
                     $nbrS = 0;
                     while ($getStaffCount->fetch()) {
                         $nbrS++;

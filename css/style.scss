@@ -2,6 +2,7 @@
 @import "./request";
 @import "./control-panel";
 @import "./requests.db";
+@import "./rec";
 *{
     margin: 0;
     padding: 0;
@@ -111,6 +112,81 @@ body, html{
         a{
             text-decoration: none;
             color: #00A8FF;
+        }
+    }
+}
+
+// reclamation
+
+#reclamation-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    form{
+        width: 500px;
+        padding: 1rem;
+        background-color: #FAFAFA;
+        box-shadow: 0 1px 6px 1px rgba(0, 0, 0 ,.3);
+        input{
+            font-size: 1.2rem;
+            padding: .3rem 1rem;
+            background-color: #eeeeee;
+            border: none;
+            display: block;
+        }
+        textarea{
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            resize: none;
+            margin-bottom: 1rem;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background-color: #28A745;
+            color: #fff;
+            cursor: pointer;
+        }
+        select{
+            width: 100%;
+            padding: .3rem 1rem;
+            margin: 1rem 0;
+        }
+    }
+}
+
+
+.recs-grid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    .reclamation{
+        padding: 1rem;
+        background-color: #FAFAFA;
+        input{
+            display: block;
+            width: 100%;
+            padding: .3rem 1rem;
+            border: none;
+            margin: .5rem 0;
+        }
+        .rec-accept{
+            width: 40%;
+            display: inline-block;
+            background-color: #28A745;
+            color: #fff;
+        }
+        .rec-decline{
+            width: 40%;
+            display: inline-block;
+            background-color: #e55039;
+            color: #fff;
+        }
+        textarea{
+            resize: none;
         }
     }
 }

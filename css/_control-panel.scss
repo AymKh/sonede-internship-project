@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+    height: 100%;
+    left: 0;
     .container{
         width: 90%;
         height: auto;
@@ -53,7 +56,7 @@
         .logout-button{
             background-color: #2980B9;
             border: none;
-            font-size: 1rem;
+            font-size: .6rem;
             color: #fff;
             padding: .5rem 0;
             width: 100%;
@@ -64,6 +67,7 @@
 
 main{
     width: 100%;
+    margin-left: 300px;
     .container{
         width: 90%;
         margin: 0 auto;
@@ -78,6 +82,7 @@ main{
                 height: 200px;
                 padding: 1rem;
                 box-shadow: 0 3px 7px rgba(0, 0, 0, .15);
+                animation: updown .3s ease-in-out;
                 h4{
                     font-size: 1.5rem;
                     font-weight: 300;
@@ -94,5 +99,16 @@ main{
                 }
             }
         }
+    }
+}
+
+@keyframes updown{
+    0%{
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
     }
 }

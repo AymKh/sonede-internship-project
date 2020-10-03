@@ -12,15 +12,13 @@
         $password = $_POST['password'];
 
         #making sure entered cin doesn't exist already
-        $searchAdmin = " SELECT * FROM admin WHERE cin = '$cin' ; ";
-        $searchStaff = " SELECT * FROM staff WHERE cin = '$cin' ; ";
+        $search = " SELECT * FROM users WHERE cin = '$cin' ; ";
         $searchRequest = " SELECT * FROM requests WHERE cin = '$cin' ; ";
         
-        $executeAdminSearch = $db -> query( $searchAdmin );
-        $executeStaffSearch = $db -> query( $searchStaff );
+        $executeSearch = $db -> query( $search );
         $executeRequestSearch = $db -> query( $searchRequest );
 
-        if ( $executeAdminSearch ->fetch() || $executeStaffSearch ->fetch() || $executeRequestSearch ->fetch()){
+        if ( $executeSearch ->fetch() || $executeRequestSearch ->fetch()){
             // cin exists
             // redirecting back to Home (request-form) page
             header('refresh:0;url=../request.php?request=failed');
