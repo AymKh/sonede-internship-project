@@ -24,9 +24,49 @@ Project for an internship at S.O.N.E.D.E 💦
 
 🟠 HTTML 5  
 🔵 CSS 3  
-🔴 SaSS  
-🟡 JavaScript  
+🔴 SaSS   
 🟣 PHP  
+
+## Database
+  
+  sonede  
+  |  
+  |---reclamations  
+  |     |  
+  |     +------ id  
+  |     |   
+  |     +------ date  
+  |     |  
+  |     +------ type  
+  |     |  
+  |     +------ note  
+  |     |  
+  |     +------ user  
+  |  
+  |  
+  |  
+  |  
+  |---requests
+  |     |  
+  |     +------ cin  
+  |     |   
+  |     +------ username  
+  |     |  
+  |     +------ pwd  
+  |     |  
+  |     +------ rank  
+  |  
+  |  
+  |  
+  |---users  
+  |     |  
+  |     +------ cin  
+  |     |   
+  |     +------ username  
+  |     |  
+  |     +------ pwd  
+  |     |  
+  |     +------ rank  
 
 ## Demo  
 
