@@ -72,5 +72,4 @@ Project for an internship at S.O.N.E.D.E 💦
 
 App is hosted on Heroku.com   
 Database is being handled by clever-cloud.com   
-test it here : https://sonede-sarra.herokuapp.com/  
 Default admin login : 12345678 | aaa
